@@ -1,0 +1,15 @@
+{
+  "name": "thinkboard",
+  "version": "1.0.0",
+  "description": "A simple and elegant **MERN stack** notes app to capture your thoughts — with rate limiting, theming, and a modern UI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "build": "npm install --prefix Backend && npm install --prefix Frontend && npm run build --prefix Frontend"
+  },
+  "keywords": [],
+  "author": "Yash Sejani",
+  "license": "ISC"
+}
