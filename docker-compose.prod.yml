@@ -1,0 +1,22 @@
+services:
+  backend:
+    image: yashsejani/thinkboard-backend:latest
+    ports:
+      - "5001:5001"
+    env_file:
+      - ./Backend/.env
+    networks:
+      - app-network
+
+  frontend:
+    image: yashsejani/thinkboard-frontend:latest
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
